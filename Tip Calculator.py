@@ -10,6 +10,6 @@ bill=input("What is the bill?")
 people=input("How many people")
 tip=input("How much for a tip?")
 
-share_pay=round(float(bill)/int(people)*(1+float(tip)/100),2)
+share_pay=format(float(bill)/int(people)*(1+float(tip)/100),".2f")
 
 print(f"Each person should pay {share_pay} share pay")
